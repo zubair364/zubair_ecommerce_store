@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services - Zubair Ecommerce Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar { background: linear-gradient(90deg, #6a11cb, #2575fc); }
+    footer { background: linear-gradient(90deg, #2575fc, #6a11cb); }
+    .carousel-item { height: 250px; background-size: cover; background-position: center; }
+    .carousel-caption { background: rgba(0,0,0,0.55); padding: 10px; border-radius: 8px; }
+    .card:hover { transform: scale(1.03); transition: 0.3s; }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="{% url 'product_list' %}">Zubair Ecommerce Store</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="{% url 'about_us' %}">About Us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="{% url 'services' %}">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'product_list' %}">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'view_cart' %}">Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Slider -->
+<div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image:url('https://images.unsplash.com/photo-1587825140708-dfaf72ae4b05?auto=format&fit=crop&w=1600&q=80');">
+      <div class="d-flex h-100 align-items-center justify-content-center">
+        <div class="carousel-caption"><h3>Our Services</h3></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="container my-5">
+  <h2 class="fw-bold text-center mb-4">What We Offer</h2>
+  <p class="lead text-center">We specialize in selling premium watches, including tech watches, smart watches, and luxury timepieces from top global brands.</p>
+
+  <div class="row g-4 mt-4">
+    <div class="col-md-4">
+      <div class="card shadow-lg">
+        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Luxury Watches">
+        <div class="card-body">
+          <h5 class="card-title">Luxury Watches</h5>
+          <p class="card-text">High-end watches from globally trusted brands, combining elegance and precision.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-lg">
+        <img src="https://images.unsplash.com/photo-1588421357574-87938a09d699?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Smart Watches">
+        <div class="card-body">
+          <h5 class="card-title">Smart & Tech Watches</h5>
+          <p class="card-text">Stay connected with advanced smartwatches that blend fashion and technology.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-lg">
+        <img src="https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Everyday Watches">
+        <div class="card-body">
+          <h5 class="card-title">Everyday Essentials</h5>
+          <p class="card-text">Durable and stylish timepieces that fit perfectly into your daily lifestyle.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-white text-center py-4">
+  <div class="container">
+    <p>✨ This app was developed by <strong>Zubair</strong></p>
+    <a href="http://127.0.0.1:8000/admin" class="btn btn-warning btn-sm">Admin Login</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
